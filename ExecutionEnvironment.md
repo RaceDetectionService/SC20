@@ -1,16 +1,16 @@
 LESSOPEN=| /usr/bin/lesspipe %s
 MAIL=/var/mail/USER
 USER=USER
-SSH_CLIENT=10.38.129.18 61917 22
+SSH_CLIENT=10.38.128.125 50468 22
 LD_LIBRARY_PATH=/usr/local/jdk1.8.0_231//jre/lib/amd64/server:/opt/llvm/llvm-9.0.0-install/lib:/usr/local/cuda/lib64:
 SHLVL=1
 HOME=/home/USER
 OLDPWD=/home/USER
-SSH_TTY=/dev/pts/4
+SSH_TTY=/dev/pts/2
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/97340286/bus
 LOGNAME=USER
 _=./collect_environment.sh
-XDG_SESSION_ID=413
+XDG_SESSION_ID=427
 TERM=xterm-256color
 PATH=/usr/local/jdk1.8.0_231//bin:/opt/llvm/llvm-9.0.0-install/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 XDG_RUNTIME_DIR=/run/user/97340286
@@ -19,7 +19,7 @@ LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd
 SHELL=/bin/bash
 LESSCLOSE=/usr/bin/lesspipe %s %s
 PWD=/home/USER/Author-Kit
-SSH_CONNECTION=10.38.129.18 61917 10.18.206.135 22
+SSH_CONNECTION=10.38.128.125 50468 10.18.206.135 22
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
 Distributor ID:	Ubuntu
 Description:	Ubuntu 18.04.4 LTS
@@ -52,39 +52,39 @@ NUMA node0 CPU(s):   0-15
 NUMA node1 CPU(s):   16-31
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 invpcid rtm rdseed adx smap xsaveopt arat md_clear flush_l1d arch_capabilities
 MemTotal:       65960804 kB
-MemFree:        59789200 kB
-MemAvailable:   63922624 kB
-Buffers:         1351512 kB
-Cached:          2406764 kB
+MemFree:        59607048 kB
+MemAvailable:   63964088 kB
+Buffers:         1370580 kB
+Cached:          2608248 kB
 SwapCached:            0 kB
-Active:          3396196 kB
-Inactive:         963288 kB
-Active(anon):     586916 kB
-Inactive(anon):      420 kB
-Active(file):    2809280 kB
-Inactive(file):   962868 kB
+Active:          3508512 kB
+Inactive:        1034668 kB
+Active(anon):     550692 kB
+Inactive(anon):      404 kB
+Active(file):    2957820 kB
+Inactive(file):  1034264 kB
 Unevictable:           0 kB
 Mlocked:               0 kB
 SwapTotal:        999420 kB
 SwapFree:         999420 kB
-Dirty:                16 kB
+Dirty:                 8 kB
 Writeback:             0 kB
-AnonPages:        601260 kB
-Mapped:           280584 kB
-Shmem:              1976 kB
-KReclaimable:    1023624 kB
-Slab:            1461576 kB
-SReclaimable:    1023624 kB
-SUnreclaim:       437952 kB
-KernelStack:       16192 kB
-PageTables:        28368 kB
+AnonPages:        563848 kB
+Mapped:           245880 kB
+Shmem:              1972 kB
+KReclaimable:    1027304 kB
+Slab:            1462864 kB
+SReclaimable:    1027304 kB
+SUnreclaim:       435560 kB
+KernelStack:       15648 kB
+PageTables:        27128 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    33979820 kB
-Committed_AS:    4670560 kB
+Committed_AS:    4270184 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:      173768 kB
+VmallocUsed:      173176 kB
 VmallocChunk:          0 kB
 Percpu:            34048 kB
 HardwareCorrupted:     0 kB
@@ -99,13 +99,13 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:      666988 kB
-DirectMap2M:     9818112 kB
-DirectMap1G:    58720256 kB
+DirectMap4k:      675180 kB
+DirectMap2M:    10858496 kB
+DirectMap1G:    57671680 kB
 NAME                  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 loop0                   7:0    0   956K  1 loop /snap/gnome-logs/81
-loop1                   7:1    0         1 loop 
-loop2                   7:2    0  91.4M  1 loop /snap/core/8689
+loop1                   7:1    0  93.9M  1 loop /snap/core/9066
+loop2                   7:2    0         1 loop 
 loop3                   7:3    0   3.7M  1 loop /snap/gnome-system-monitor/127
 loop4                   7:4    0   4.3M  1 loop /snap/gnome-calculator/704
 loop5                   7:5    0   956K  1 loop /snap/gnome-logs/93
@@ -122,6 +122,7 @@ loop15                  7:15   0   3.7M  1 loop /snap/gnome-system-monitor/135
 loop16                  7:16   0  62.1M  1 loop /snap/gtk-common-themes/1506
 loop17                  7:17   0 156.7M  1 loop /snap/gnome-3-28-1804/110
 loop18                  7:18   0  54.8M  1 loop /snap/gtk-common-themes/1502
+loop19                  7:19   0         0 loop 
 sda                     8:0    0     2T  0 disk 
 ├─sda1                  8:1    0   512M  0 part /boot/efi
 ├─sda2                  8:2    0 199.5G  0 part 
@@ -131,7 +132,7 @@ sda                     8:0    0     2T  0 disk
 └─sda3                  8:3    0   1.8T  0 part 
   └─ubuntu--vg-home   253:2    0   1.8T  0 lvm  /home
 sr0                    11:0    1  1024M  0 rom  
-Wed Apr 22 10:16:21 2020       
+Wed Apr 22 17:30:30 2020       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 430.63       Driver Version: 430.63       CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
@@ -211,4 +212,3 @@ H/W path     Device       Class      Description
 /4           veth5d57122  network    Ethernet interface
 /5           veth849e4d7  network    Ethernet interface
 /6           docker0      network    Ethernet interface
-
