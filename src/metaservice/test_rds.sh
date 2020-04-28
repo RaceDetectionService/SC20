@@ -8,5 +8,5 @@ for test in "${TESTS[@]}"; do
   id=${testname#DRB}
   id=${id%%-*}
   echo "$test has $testname and ID=$id"
-  curl -F "file=@\"$test\"" cci-pivo:5010/test?type=json
+  curl -F "file=@\"$test\"" localhost:5010/test?type=json
 done
