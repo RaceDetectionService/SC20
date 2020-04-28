@@ -1,0 +1,34 @@
+<html>
+  <head> </head>
+  <body>
+    <form action="/benchmark" method="POST" enctype="multipart/form-data">
+      <select name="list" class=" form-control" multiple>
+        <option value="archer">Archer</option>
+        <option value="intellspector">Intellspector</option>
+        <option value="tsan">TSan</option>
+        <option value="romp">Romp</option>
+      </select>
+      <input type="submit" />
+    </form>
+    {% if ('archer' in val or 'intellspector' in val or 'tsan' in val or 'romp'
+    in val) %} {% for value in val.keys() %}
+    <h2>{{value}}</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          {% for key2 in val[value].keys() %}
+          <th>{{ key2 }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {% for value1 in val[value].values() %}
+          <td>{{value1}}</td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+    {% endfor %} {% endif %}
+  </body>
+</html>

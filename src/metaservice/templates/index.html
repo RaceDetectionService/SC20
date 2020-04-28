@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+      <select name="racedetection" multiple>
+        <option value="archer">Archer</option>
+        <option value="intellspector">Intellspector</option>
+        <option value="tsan">TSan</option>
+        <option value="romp">Romp</option>
+      </select>
+      <input type="file" name="file" />
+      <input type="submit" />
+    </form>
+    <!-- <form method="POST">
+        <p>Command</p>
+        <p><input type="text" name="content" /></p>
+        <p><input type="submit" value="submit"></p>
+        </form> -->
+
+    {% if ('archer' in val or 'intellspector' in val or 'tsan' in val or 'romp'
+    in val) %}
+
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+      <li role="presentation" class="active">
+        <a href="#tab1" data-toggle="tab">Tab 1</a>
+      </li>
+      <li role="presentation">
+        <a href="#tab2" data-toggle="tab">Tab 2</a>
+      </li>
+      <li role="presentation">
+        <a href="#tab3" data-toggle="tab">Tab 3</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        {% if ('archer' in val or 'intellspector' in val or 'tsan' in val or
+        'romp' in val) %} {% for value in val.keys() %} {% for intval in
+        val[value].keys() %} {% if "0" in val[value][intval]%}
+        <h3>{{value}}{{intval}}</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              {% for key2 in val[value][intval]["0"].keys() %}
+              <th>{{ key2 }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          {% for value1 in val[value][intval].values() %}
+          <tbody>
+            <tr>
+              {% for value2 in value1.values() %}
+              <td>{{value2}}</td>
+              {% endfor %}
+            </tr>
+          </tbody>
+          {% endfor %}
+        </table>
+        {% endif %} {% endfor %} {% endfor %} {% endif %}
+      </div>
+
+      <div class="tab-pane" id="tab2">
+        {% if ('archer' in val or 'intellspector' in val or 'tsan' in val or
+        'romp' in val) %} {% for value in val.keys() %} {% if "0" in
+        val[value][0]%}
+        <h3>{{value}}</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              {% for key2 in val[value][0]["0"].keys() %}
+              <th>{{ key2 }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for intval in val[value].keys() %} {% for value1 in
+            val[value][intval].values() %}
+            <tr>
+              {% for value2 in value1.values() %}
+              <td>{{value2}}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %} {% endfor %}
+          </tbody>
+        </table>
+        {% endif %} {% endfor %} {% endif %}
+      </div>
+
+      <div class="tab-pane" id="tab3">
+        {% if ('archer' in val or 'intellspector' in val or 'tsan' in val or
+        'romp' in val) %}
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Memory Address</th>
+              <th>Read_thread</th>
+              <th>Write_thread</th>
+              <th>file loaction</th>
+              <th>read file name</th>
+              <th>read line #</th>
+              <th>read symbol position</th>
+              <th>tool</th>
+              <th>write file name</th>
+              <th>write line #</th>
+              <th>write symbol position</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for value in val.keys() %} {% for intval in val[value].keys() %}
+            {% for value1 in val[value][intval].values() %}
+            <tr>
+              {% for value2 in value1.values() %}
+              <td>{{value2}}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %} {% endfor %}
+          </tbody>
+          {% endfor %}
+        </table>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+  </body>
+</html>

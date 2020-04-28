@@ -1,0 +1,1 @@
+printf '{"RaceDetection":"%s","ip":"%s","uptime":"%s"}\n' "Intell Inspector" "10.220.130.178" "Always"
