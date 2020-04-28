@@ -22,7 +22,7 @@ The images contain all tools with proper configuration. Because Flask code could
 
 #### Metaservice
 ```bash
-sudo docker pull ouankou/rds:meta-test
+sudo docker pull racedetectionservice/rds:meta-local
 ```
 #### ThreadSanitizer
 ```bash
@@ -51,19 +51,19 @@ In this case we assume the ports 5010, 5011, 5012, 5013 and 5014 are available f
 
 #### Metaservice
 ```bash
-sudo docker run -p 5010:5000 --name rds_meta ouankou/rds:meta-test
-```
-#### ThreadSanitizer
-```bash
-sudo docker run -p 5013:5000 --name rds_tsan ouankou/rds:tsan-test
+sudo docker run -p 5010:5000 --name rds_meta ouankou/rds:meta-test &
 ```
 #### Archer
 ```bash
-sudo docker run -p 5011:5000 --name rds_archer ouankou/rds:archer-test
+sudo docker run -p 5011:5000 --name rds_archer ouankou/rds:archer-test &
+```
+#### ThreadSanitizer
+```bash
+sudo docker run -p 5013:5000 --name rds_tsan ouankou/rds:tsan-test &
 ```
 #### ROMP
 ```bash
-sudo docker run -p 5014:5000 --name rds_romp ouankou/rds:romp-test
+sudo docker run -p 5014:5000 --name rds_romp ouankou/rds:romp-test &
 ```
 #### Intel Inspector
 A valid license is required to install and use Intel Inspector.
