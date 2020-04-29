@@ -1,6 +1,6 @@
 # SC20
 
-## Deployment the RaceDetectionService(rds) enviorment to use
+## Deployment the RaceDetectionService(RDS) enviorment to use
 
 There two different ways to set up your RDS. You can set up RDS by yourslef on your local machine or you can set up RDS enviorment by our docker image. 
 
