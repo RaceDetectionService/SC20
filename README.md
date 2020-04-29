@@ -12,4 +12,4 @@ There two different ways to set up your RDS. You can set up RDS by yourslef on y
 
 First, install four tools by following instruction.
 
-[Instruction of four tools](installTool.md)
+[Instruction of four tools](InstallTool.md)
