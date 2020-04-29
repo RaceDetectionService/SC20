@@ -16,8 +16,14 @@
    
    Second, set up your four RDS Micorservices by following instruction.
     
-      [Instruction of setup four RDS Micorservices](MicroserviceSetup.md)
+      [Instruction for setup four RDS Micorservices](MicroserviceSetup.md)
      
    Last, set up your RDS Metaservice by following instruction.
     
-      [Instruction of setup RDS Metaservice](MetaserviceSetup.md)
+      [Instruction for setup RDS Metaservice](MetaserviceSetup.md)
+
+## Evaluate the RaceDetectionService(RDS) by DataRaceBench
+
+   Evaluate the RDS with DataRaceBench by following instruction.
+       
+   [Instruction for evaluate RDS and indivadual tools](Evaluation.md)
