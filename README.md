@@ -12,8 +12,8 @@
 
    First, install four tools by following instruction.
 
-      [Instruction of four tools](InstallTool.md)
+      [Instruction for install four tools](InstallTool.md)
    
    Second, set up your four RDS micorservices by following instruction.
     
-      [Instruction of four RDS micorservices](MicroserviceSetup.md)
+      [Instruction of setup four RDS micorservices](MicroserviceSetup.md)
