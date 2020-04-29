@@ -1,6 +1,6 @@
-#Install four tools by following steps.
+# Install four tools by following steps.
 
-##Install Archer: creat the floder for archer and archer build
+## Install Archer: creat the floder for archer and archer build
 
 ```	
  	export ARCHER_BUILD=$PWD/ArcherBuild
