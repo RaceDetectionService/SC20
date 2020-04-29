@@ -20,4 +20,4 @@
      
    Last, set up your RDS Metaservice by following instruction.
     
-      [Instruction of setup four RDS Metaservice](MetaserviceSetup.md)
+      [Instruction of setup RDS Metaservice](MetaserviceSetup.md)
