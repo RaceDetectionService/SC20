@@ -2,7 +2,7 @@
 
 ## Deployment the RaceDetectionService(RDS) enviorment to use
 
-There two different ways to set up your RDS. You can set up RDS by yourslef on your local machine or you can set up RDS enviorment by our docker image. 
+  There two different ways to set up your RDS. You can set up RDS by yourslef on your local machine or you can set up RDS     enviorment by our docker image. 
 
 1. Set up RDS enviorment via docker
 
