@@ -6,10 +6,10 @@
 
 1. Set up RDS enviorment via docker
 
-  [Instruction of local deployment](deployment.md)
+    [Instruction of local deployment](deployment.md)
 
 2. Set up RDS enviorment via your desktop or serve.
 
-  First, install four tools by following instruction.
+   First, install four tools by following instruction.
 
-  [Instruction of four tools](InstallTool.md)
+    [Instruction of four tools](InstallTool.md)
