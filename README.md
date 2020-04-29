@@ -1,5 +1,7 @@
 # SC20
 
-## Deployment of RDS
+## Deployment the RaceDetectionService(rds) enviorment to use
+
+1.Set up RDS enviorment via docker
 
 [Instruction of local deployment](deployment.md)
