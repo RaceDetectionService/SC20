@@ -1,6 +1,8 @@
 # Install four tools by following steps.
 
-## Install Archer: creat the floder for archer and archer build
+## Install Archer: 
+
+creat the floder for archer and archer build
 
 ```	
  	export ARCHER_BUILD=$PWD/ArcherBuild
@@ -100,4 +102,12 @@ Test Archer:
  	clang-archer DRB104-nowait-barrier-orig-no.c -o myApp -larcher
 	./myApp 
 ```
+## Install ThreadSanitizer:
 
+get llvm 10.0, clang 10.0, OpenMP 10.0 and compiler-rt:
+```
+	wget https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/llvm-10.0.0.src.tar.xz
+	wget https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/compiler-rt-10.0.0.src.tar.xz
+	wget https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/openmp-10.0.0.src.tar.xz
+	wger https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang-10.0.0.src.tar.xz
+```
