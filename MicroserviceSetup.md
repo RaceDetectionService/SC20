@@ -3,7 +3,7 @@
 Download source code from our GitHub Reporsitory:
 
 ```
- 	        git clone https://github.com/RaceDetectionService/SC20.git
+          git clone https://github.com/RaceDetectionService/SC20.git
           or
           git clone https://github.com/RaceDetectionService/RaceDetectionService_Server.git
 
@@ -18,7 +18,7 @@ To setup Microservice-Archer, you need install Archer on you computer. The instr
 Run the Microserive for Archer by following commend:
 
 ```
- 	        cd src
+          cd src
           cd microservices
           cd Archer
           python3 Flask_Archer.py
@@ -33,7 +33,7 @@ To setup Microservice-ThreadSanitizer, you need install ThreadSanitizer on you c
 Run the Microserive for ThreadSanitizer by following commend:
 
 ```
- 	        cd src
+          cd src
           cd microservices
           cd ThreadSanitizer
           python3 Flask_TSan.py
@@ -48,7 +48,7 @@ To setup Microservice-IntelInspector, you need install Intel Inspector on you co
 Run the Microserive for Intel Inspector by following commend:
 
 ```
- 	        cd src
+ 	       cd src
           cd microservices
           cd Inspector
           python3 Flask_Intellnspector.py
