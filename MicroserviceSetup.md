@@ -48,7 +48,7 @@ To setup Microservice-IntelInspector, you need install Intel Inspector on you co
 Run the Microserive for Intel Inspector by following commend:
 
 ```
- 	       cd src
+          cd src
           cd microservices
           cd Inspector
           python3 Flask_Intellnspector.py
@@ -63,10 +63,10 @@ To setup Microservice-Romp, you need install Romp on you computer. The instructi
 Run the Microserive for Romp by following commend:
 
 ```
- 	        cd src
+          cd src
           cd microservices
           cd ROMP
           python3 Flask_ROMP.py
 ```
 
-Those four microservice runs on same port by default. If you want to run those microsercive, you need run it on four different computers. Or, you can use the docker image provice by us. You can check the prvious docker instruction to set up microservice.
+Those four microservices run on same port by default. If you want to run those microsercive, you need run it on four different computers. Or, you can use the docker image provice by us. You can check the prvious docker instruction to set up microservice.
