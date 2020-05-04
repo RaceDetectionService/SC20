@@ -8,7 +8,7 @@
 
       [Instruction of local deployment](deployment.md)
 
-2. Set up RDS enviorment via your desktop or serve.
+2. Set up RDS enviorment via your desktop or server.
 
    First, install four tools by following instruction.
 
