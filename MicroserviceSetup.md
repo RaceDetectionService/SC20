@@ -70,3 +70,26 @@ Run the Microserive for Romp by following commend:
 ```
 
 Those four microservices run on same port by default. If you want to run those microsercive, you need run it on four different computers. Or, you can use the docker image provice by us. You can check the prvious docker instruction to set up microservice.
+
+## Build Docker images
+
+Instead of installing all tools manually on the host, we could also build the Docker images for easier deployment.
+
+```bash
+# get the RDS source code
+git clone https://github.com/RaceDetectionService/RaceDetectionService_Server.git
+```
+#### Archer
+
+```bash
+# enter the RDS srouce folder
+cd src/microservices/Archer/
+docker build -t rds-archer -f dockerfile .
+```
+
+#### TSan
+
+```bash
+cd src/microservices/ThreadSanitizer
+docker build -t rds-tsan -f dockerfile .
+```
