@@ -82,14 +82,15 @@ git clone https://github.com/RaceDetectionService/RaceDetectionService_Server.gi
 #### Archer
 
 ```bash
-# enter the RDS srouce folder
+# enter the RDS srouce folder first
 cd src/microservices/Archer/
 docker build -t rds-archer -f dockerfile .
 ```
 
-#### TSan
+#### ThreadSanitizer
 
 ```bash
+# enter the RDS srouce folder first
 cd src/microservices/ThreadSanitizer
 docker build -t rds-tsan -f dockerfile .
 ```
