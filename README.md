@@ -4,11 +4,7 @@
 
   There two different ways to set up your RDS. You can set up RDS by yourslef on your local machine or you can set up RDS     enviorment by our docker image. 
 
-1. Set up RDS enviorment via docker
-
-      [Instruction of local deployment](deployment.md)
-
-2. Set up RDS enviorment via your desktop or server.
+1. Set up RDS enviorment via your desktop or server.
 
    First, install four tools by following instruction.
 
@@ -21,6 +17,10 @@
    Last, set up your RDS Metaservice by following instruction.
     
       [Instruction for setup RDS Metaservice](MetaserviceSetup.md)
+
+2. Set up RDS enviorment via docker
+
+      [Instruction of local deployment](deployment.md)
 
 ## Evaluate the RaceDetectionService(RDS) by DataRaceBench
 
