@@ -1,6 +1,6 @@
 # Install four tools by following steps.
 
-## Install Archer: 
+## Install Archer([original instruction](https://github.com/PRUNERS/archer)): 
 
 Creat the floder for archer and archer build
 
@@ -103,7 +103,7 @@ Test Archer:
  	clang-archer DRB104-nowait-barrier-orig-no.c -o myApp -larcher
 	./myApp 
 ```
-## Install ThreadSanitizer:
+## Install ThreadSanitizer([original instruction](https://github.com/google/sanitizers/wiki/ThreadSanitizerCppManual)):
 
 Get llvm 10.0, clang 10.0, OpenMP 10.0 and compiler-rt:
 ```
@@ -154,7 +154,7 @@ Test
 	clang DRB001-antidep1-orig-yes.c -fopenmp -fsanitize=thread -fPIE -pie -g -o myApp
 	./myApp
 ```
-## Install ROMP
+## Install ROMP:
 Get Special Spack and check out to romp-build branch:
 ```
 	git clone git@github.com:zygyz/spack.git
@@ -178,7 +178,7 @@ Install OpenMP and support library:
 	spack install glog %gcc@9.6.2
 	spack install dyninst %gcc@9.6.2
 ```
-Install Romp:
+Install Romp([original instruction](https://github.com/zygyz/romp)):
 ```
 	spack install romp %gcc@9.6.0
 ```
@@ -201,7 +201,7 @@ Test your Romp:
 	export ROMP_REPORT_LINE=on
 	./myApp.inst
 ```
-## Install Intel Inspector
+## Install Intel Inspector([original instruction](https://software.intel.com/content/www/us/en/develop/documentation/get-started-with-inspector/top/linux.html)):
 
 Download inspector for linux from Intel inspector website:
 https://software.intel.com/en-us/parallel-studio-xe
