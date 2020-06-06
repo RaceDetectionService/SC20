@@ -56,7 +56,7 @@ Get OpenMP libarary support:
 	cd openmp
 	git checkout release_60
 ```
-Build Archer with nijia:
+Build Archer with ninja:
 ```
 	cd $ARCHER_BUILD
 	mkdir -p llvm_bootstrap
