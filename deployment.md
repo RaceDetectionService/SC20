@@ -21,7 +21,7 @@ https://hub.docker.com/repository/docker/ouankou/rds
 The images contain all tools with proper configuration.
 #### Metaservice
 ```bash
-sudo docker pull racedetectionservice/rds:meta-test
+sudo docker pull ouankou/rds:meta-test
 ```
 #### ThreadSanitizer
 ```bash
