@@ -18,11 +18,10 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 All the docker images ready for use are uploaded to DockerHub.
 https://hub.docker.com/repository/docker/ouankou/rds
-The images contain all tools with proper configuration. Because Flask code could be updated frequently, they are not included in the docker image. Instead, they should be mounted into the docker container.
-
+The images contain all tools with proper configuration.
 #### Metaservice
 ```bash
-sudo docker pull racedetectionservice/rds:meta-local
+sudo docker pull racedetectionservice/rds:meta-test
 ```
 #### ThreadSanitizer
 ```bash
