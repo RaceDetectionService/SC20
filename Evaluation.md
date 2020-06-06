@@ -1,13 +1,13 @@
-# Evaluate four indivdual tools and RDS
+# Evaluate four individual tools and RDS
 
-## Evaluate the four indivadual tools 
+## Evaluate the four individual tools 
 
 1. Download modified benchmark from our GitHub repository.
 
 ```
     git clone https://github.com/RaceDetectionService/dataracebench.git
 ```
-2. Run DataRaceBen for each indivdual tools with command:
+2. Run DataRaceBen for each individual tools with command:
 
 ```
     cd dataracebench
